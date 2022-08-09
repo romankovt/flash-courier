@@ -1,0 +1,96 @@
+.global-header {
+  background-color: #0f00b9;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.global-footer {
+  background-color: #0f00b9;
+  height: 75px;
+  line-height: 75px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.global-header-text {
+  color: white;
+}
+
+.global-footer-text {
+  color: white;
+  padding-left: 100px;
+}
+
+.main-block {
+  margin-bottom: 35px;
+}
+
+.courier-item p {
+  margin-bottom: 2px;
+}
+
+.courier-list-item {
+  border: 1px solid black;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 15px;
+  width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.courier-list-item a:visited {
+  text-decoration: none;
+}
+
+.courier-list-item a:link {
+  text-decoration: none;
+}
+
+.close-courier-edit {
+  float: right;
+  padding-right: 30px;
+}
+
+.flash {
+  position:fixed;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-s);
+
+  max-width: 100%;
+  width: max-content;
+  padding: 0 var(--space-m);
+}
+
+.flash .__message {
+  font-size: var(--font-size-s);
+  color: var(--color-white);
+  padding: var(--space-xs) var(--space-m);
+  background-color: var(--color-dark);
+  animation: appear-then-fade 4s both;
+  border-radius: 999px;
+}
+
+
+
+/* utils */
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}

@@ -1,0 +1,19 @@
+<h1>Editing courier</h1>
+
+<%= turbo_frame_tag dom_id(@courier) do %>
+  <%= render "form", courier: @courier %>
+
+  <!-- <hr/>
+
+  <div data-controller="hello-courier">
+    <input data-hello-courier-target="name" type="text"></input>
+    <button data-action="click->hello-courier#greet">Greet</button>
+    <span>Hello courier!</span>
+  </div>
+
+  <div data-controller="clipboard">
+    Courier PIN:
+    <input type="text" value="1234" data-clipboard-target="source" readonly></input>
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div> -->
+<% end %>

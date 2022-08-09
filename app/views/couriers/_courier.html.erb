@@ -1,0 +1,27 @@
+<%= turbo_frame_tag dom_id(courier) do %>
+  <div class="courier-list-item" id="<%= dom_id(courier, "wrapper") %>">
+    <p>
+      <strong>First name:</strong>
+      <%= courier.first_name %>
+    </p>
+
+    <p>
+      <strong>Last name:</strong>
+      <%= courier.last_name %>
+    </p>
+
+    <p>
+      <strong>Phone:</strong>
+      <%= courier.phone %>
+    </p>
+
+    <p>
+      <strong>Status:</strong>
+      <%= courier.status %>
+    </p>
+
+    <%= link_to "Profile", courier, "data-turbo": false %> |
+    <%= link_to "Edit", edit_courier_path(courier), "data-turbo-frame": dom_id(courier) %> |
+    <%= button_to "Delete", courier, method: :delete, form_class: "inline-block" %>
+  </div>
+<% end %>

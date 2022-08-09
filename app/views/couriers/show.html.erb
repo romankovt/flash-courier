@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<%= turbo_frame_tag dom_id(@courier) do %>
+  <%= render @courier %>
+<% end %>
+
+<div>
+  <%= link_to "Edit this courier", edit_courier_path(@courier) %> |
+  <%= link_to "Back to couriers", couriers_path %>
+
+  <%= button_to "Destroy this courier", @courier, method: :delete %>
+</div>

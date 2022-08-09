@@ -167,6 +167,9 @@ Rails/ApplicationRecord:
   Exclude:
     - 'db/migrate/**/*'
 
+Rails/I18nLocaleTexts:
+  Enabled: false
+
 # rspec cops
 RSpec/HookArgument:
   EnforcedStyle: each

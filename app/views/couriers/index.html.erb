@@ -1,0 +1,17 @@
+<%= turbo_stream_from "courier_list" %>
+
+<p style="color: green"><%= notice %></p>
+
+<h1 class="mb-10">Couriers</h1>
+
+<%= turbo_frame_tag Courier.new %>
+
+<div class="mb-10">
+  <%= link_to "New courier", new_courier_path, data: { turbo_frame: dom_id(Courier.new) } %>
+</div>
+
+<div id="couriers">
+  <% @couriers.each do |courier |%>
+    <%= render courier %>
+  <% end %>
+</div>
